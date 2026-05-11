@@ -45,7 +45,8 @@
   <path class="line" d="M492 161 H572"/>
   <path class="line" d="M777 161 H850"/>
 
-  <rect class="box warn" x="280" y="300" width="560" height="84"/>
-  <text class="text" x="560" y="334" text-anchor="middle">Before RF transmission</text>
-  <text class="small" x="560" y="362" text-anchor="middle">test into a dummy load, monitor your downlink, and coordinate on the BATC wideband monitor</text>
+  <rect class="box warn" x="280" y="292" width="560" height="100"/>
+  <text class="text" x="560" y="326" text-anchor="middle">Before RF transmission</text>
+  <text class="small" x="560" y="354" text-anchor="middle">test into a dummy load, monitor your downlink,</text>
+  <text class="small" x="560" y="376" text-anchor="middle">and coordinate on the BATC wideband monitor</text>
 </svg>
