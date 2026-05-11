@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="360" viewBox="0 0 1120 360" role="img" aria-labelledby="title desc">
+  <title id="title">Simplified QO-100 wideband transponder bandmap</title>
+  <desc id="desc">A simplified not-to-scale bandmap of QO-100 wideband DATV areas and common symbol rates.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .axis { stroke: #111827; stroke-width: 3; }
+      .tick { stroke: #111827; stroke-width: 2; }
+      .beacon { fill: #fde68a; stroke: #92400e; stroke-width: 2; }
+      .wide { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2; }
+      .narrow { fill: #dcfce7; stroke: #15803d; stroke-width: 2; }
+      .very { fill: #fce7f3; stroke: #be185d; stroke-width: 2; }
+      .text { font: 20px sans-serif; fill: #111827; }
+      .small { font: 15px sans-serif; fill: #334155; }
+      .tiny { font: 13px sans-serif; fill: #475569; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1120" height="360"/>
+  <text class="text" x="560" y="42" text-anchor="middle">QO-100 Wideband DATV, simplified memory aid</text>
+  <text class="small" x="560" y="70" text-anchor="middle">Not to scale. Check the official BATC and AMSAT-DL bandplans before transmitting.</text>
+
+  <line class="axis" x1="90" y1="260" x2="1030" y2="260"/>
+  <line class="tick" x1="110" y1="248" x2="110" y2="278"/>
+  <line class="tick" x1="1020" y1="248" x2="1020" y2="278"/>
+  <text class="small" x="110" y="306" text-anchor="middle">10491.5 MHz downlink</text>
+  <text class="small" x="1020" y="306" text-anchor="middle">about 10499.25 MHz</text>
+  <text class="tiny" x="565" y="334" text-anchor="middle">Uplink is approximately downlink minus 8089.5 MHz, for example 10499.25 downlink maps to 2409.75 MHz uplink.</text>
+
+  <rect class="beacon" x="102" y="120" width="120" height="78" rx="8"/>
+  <text class="small" x="162" y="150" text-anchor="middle">Beacon</text>
+  <text class="tiny" x="162" y="176" text-anchor="middle">1500 kS</text>
+
+  <rect class="wide" x="245" y="106" width="312" height="92" rx="8"/>
+  <text class="small" x="401" y="138" text-anchor="middle">Wide DATV</text>
+  <text class="tiny" x="401" y="166" text-anchor="middle">1000/1500 kS channels</text>
+
+  <rect class="narrow" x="575" y="106" width="350" height="92" rx="8"/>
+  <text class="small" x="750" y="138" text-anchor="middle">Narrow DATV</text>
+  <text class="tiny" x="750" y="166" text-anchor="middle">250/333/500 kS channels</text>
+
+  <rect class="very" x="245" y="210" width="680" height="36" rx="8"/>
+  <text class="tiny" x="585" y="234" text-anchor="middle">Very narrow DATV slots across the user area: 33/66/125 kS</text>
+
+  <line class="tick" x1="925" y1="90" x2="925" y2="278"/>
+  <text class="tiny" x="925" y="88" text-anchor="middle">regular net example</text>
+  <text class="tiny" x="925" y="104" text-anchor="middle">333 kS, if free</text>
+</svg>

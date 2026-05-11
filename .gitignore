@@ -1,0 +1,10 @@
+build/
+dist/
+/CMakeLists.txt
+__pycache__/
+.pytest_cache/
+*.pyc
+*.zip
+*.mkv
+*.mp4
+rtmp_live_qo100_test_outputs/

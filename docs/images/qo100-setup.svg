@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="440" viewBox="0 0 1120 440" role="img" aria-labelledby="title desc">
+  <title id="title">MaixCAM to ADALM-Pluto QO-100 DATV setup</title>
+  <desc id="desc">A schematic showing MaixCAM sending RTMP over IP to PlutoDVB, then through a 2.4 GHz RF chain to a dish and QO-100.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#1f2937"/>
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .box { fill: #ffffff; stroke: #334155; stroke-width: 2; rx: 8; }
+      .accent { fill: #e0f2fe; stroke: #0369a1; }
+      .rf { fill: #fef3c7; stroke: #92400e; }
+      .warn { fill: #fee2e2; stroke: #991b1b; }
+      .text { font: 20px sans-serif; fill: #111827; }
+      .small { font: 15px sans-serif; fill: #334155; }
+      .tiny { font: 13px sans-serif; fill: #475569; }
+      .line { stroke: #1f2937; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1120" height="440"/>
+  <rect class="box accent" x="32" y="98" width="170" height="126"/>
+  <text class="text" x="117" y="142" text-anchor="middle">MaixCAM</text>
+  <text class="small" x="117" y="174" text-anchor="middle">RTMP Live</text>
+  <text class="small" x="117" y="198" text-anchor="middle">QO-100 app</text>
+
+  <rect class="box" x="282" y="82" width="210" height="158"/>
+  <text class="text" x="387" y="126" text-anchor="middle">IP Network</text>
+  <text class="small" x="387" y="158" text-anchor="middle">Wi-Fi, Ethernet,</text>
+  <text class="small" x="387" y="182" text-anchor="middle">bridge, or relay PC</text>
+  <text class="tiny" x="387" y="212" text-anchor="middle">RTMP URL reaches PlutoDVB</text>
+
+  <rect class="box accent" x="572" y="82" width="205" height="158"/>
+  <text class="text" x="675" y="126" text-anchor="middle">ADALM-Pluto</text>
+  <text class="small" x="675" y="158" text-anchor="middle">F5OEO PlutoDVB</text>
+  <text class="small" x="675" y="182" text-anchor="middle">RTMP input</text>
+  <text class="tiny" x="675" y="212" text-anchor="middle">DVB-S/S2 modulator</text>
+
+  <rect class="box rf" x="850" y="82" width="218" height="158"/>
+  <text class="text" x="959" y="122" text-anchor="middle">2.4 GHz RF Chain</text>
+  <text class="small" x="959" y="154" text-anchor="middle">attenuator, filter,</text>
+  <text class="small" x="959" y="178" text-anchor="middle">driver/PA, dish feed</text>
+  <text class="tiny" x="959" y="211" text-anchor="middle">uplink to QO-100</text>
+
+  <path class="line" d="M202 161 H282"/>
+  <path class="line" d="M492 161 H572"/>
+  <path class="line" d="M777 161 H850"/>
+
+  <rect class="box warn" x="280" y="300" width="560" height="84"/>
+  <text class="text" x="560" y="334" text-anchor="middle">Before RF transmission</text>
+  <text class="small" x="560" y="362" text-anchor="middle">test into a dummy load, monitor your downlink, and coordinate on the BATC wideband monitor</text>
+</svg>

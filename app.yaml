@@ -1,0 +1,13 @@
+id: rtmp_live_qo100
+name: RTMP Live QO-100
+name[zh]: RTMP QO-100 直播
+version: 1.0.0
+icon: assets/live.json
+author: Denis UR8US/S58UA
+desc: RTMP live with QO-100 bitrates and H.264/H.265
+desc[zh]: 支持 QO-100 码率和 H.264/H.265 的 RTMP 直播
+files:
+  main.py: main.py
+  app.yaml: app.yaml
+  assets: assets
+  README.md: README.md
