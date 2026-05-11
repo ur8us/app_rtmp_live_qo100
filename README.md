@@ -133,7 +133,7 @@ Before involving the Pluto or any RF hardware, test that the camera can stream t
 
 3. Open `maixcam-test.mkv` and confirm that video is present.
 
-Development validation for this app recorded a 10-second RTMP file for every selectable bitrate with both H.264 and H.265. All 18 live-camera cases produced 640x480 video and the expected codec.
+Development validation for this app recorded live RTMP files for every selectable bitrate with both H.264 and H.265. The latest 15-second matrix is stored in [`test-results/matrix_20260511_183749_15s`](test-results/matrix_20260511_183749_15s/README.md): all 18 live-camera cases produced 640x480 video and the expected codec.
 
 ## Pluto Firmware
 

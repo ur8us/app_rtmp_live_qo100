@@ -1,0 +1,16 @@
+Input #0, flv, from 'rtmp://0.0.0.0:1935/live/qo100_h264_033kbps_20260511_183749':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: h264 (Main), yuvj420p(pc, bt470bg/bt470bg/bt709, progressive), 640x480, 15 fps, 30 tbr, 1k tbn
+Output #0, matroska, to 'test-results/matrix_20260511_183749_15s/h264_033kbps.mkv':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: h264 (Main) (H264 / 0x34363248), yuvj420p(pc, bt470bg/bt470bg/bt709, progressive), 640x480, q=2-31, 15 fps, 30 tbr, 1k tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Press [q] to stop, [?] for help
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=      27kB time=00:00:03.45 bitrate=  63.8kbits/s speed=6.49x    size=      27kB time=00:00:03.95 bitrate=  55.7kbits/s speed=3.83x    size=      35kB time=00:00:04.48 bitrate=  63.1kbits/s speed=2.86x    size=      42kB time=00:00:05.01 bitrate=  68.6kbits/s speed=2.39x    size=      42kB time=00:00:05.51 bitrate=  62.4kbits/s speed=2.12x    size=      50kB time=00:00:06.05 bitrate=  67.0kbits/s speed=1.93x    size=      50kB time=00:00:06.55 bitrate=  61.9kbits/s speed= 1.8x    size=      57kB time=00:00:07.05 bitrate=  66.3kbits/s speed=1.71x    size=      57kB time=00:00:07.55 bitrate=  61.9kbits/s speed=1.63x    size=      65kB time=00:00:08.05 bitrate=  65.6kbits/s speed=1.57x    size=      65kB time=00:00:08.58 bitrate=  61.6kbits/s speed=1.52x    size=      72kB time=00:00:09.11 bitrate=  64.7kbits/s speed=1.47x    size=      76kB time=00:00:09.61 bitrate=  64.8kbits/s speed=1.44x    size=      76kB time=00:00:10.11 bitrate=  61.6kbits/s speed=1.41x    size=      84kB time=00:00:10.61 bitrate=  64.7kbits/s speed=1.38x    size=      84kB time=00:00:11.11 bitrate=  61.8kbits/s speed=1.36x    size=      92kB time=00:00:11.65 bitrate=  64.6kbits/s speed=1.33x    size=      96kB time=00:00:12.18 bitrate=  64.4kbits/s speed=1.32x    size=     100kB time=00:00:12.68 bitrate=  64.5kbits/s speed= 1.3x    size=     104kB time=00:00:13.21 bitrate=  64.4kbits/s speed=1.28x    size=     108kB time=00:00:13.71 bitrate=  64.5kbits/s speed=1.27x    size=     112kB time=00:00:14.25 bitrate=  64.5kbits/s speed=1.26x    size=     116kB time=00:00:14.78 bitrate=  64.4kbits/s speed=1.25x    [in#0/flv @ 0x5f8eba840180] Error during demuxing: Input/output error
+[in#0/flv @ 0x5f8eba840180] Error retrieving a packet from demuxer: Input/output error
+[out#0/matroska @ 0x5f8eba846640] video:116kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 3.661856%
+size=     121kB time=00:00:14.81 bitrate=  66.6kbits/s speed=1.25x    

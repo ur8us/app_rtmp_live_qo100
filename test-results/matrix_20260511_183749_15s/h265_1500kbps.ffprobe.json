@@ -1,0 +1,17 @@
+{
+  "programs": [],
+  "streams": [
+    {
+      "codec_name": "hevc",
+      "width": 640,
+      "height": 480,
+      "r_frame_rate": "15/1",
+      "avg_frame_rate": "15/1"
+    }
+  ],
+  "format": {
+    "duration": "14.896000",
+    "size": "5412286",
+    "bit_rate": "2906705"
+  }
+}

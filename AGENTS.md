@@ -126,6 +126,12 @@ A live-camera RTMP matrix test was run with every codec and bitrate combination:
 
 Each case produced 640x480 video and the expected codec when probed with FFmpeg/ffprobe.
 
+On 2026-05-11 a second live-camera matrix test was run with 15-second captures for each case. Results are stored in `test-results/matrix_20260511_183749_15s`. All 18 cases passed:
+
+- H.264 at `33`, `66`, `125`, `250`, `333`, `500 kbps`, `1`, `1.5`, and `2 Mbps`
+- H.265/HEVC at `33`, `66`, `125`, `250`, `333`, `500 kbps`, `1`, `1.5`, and `2 Mbps`
+- Every recording probed as 640x480 with the expected codec
+
 ## Documentation Notes
 
 The public README intentionally avoids workstation-specific paths and camera credentials. Use placeholders such as `<camera-ip>`, `<pluto-ip>`, and `<callsign>` in public-facing examples.
