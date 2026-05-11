@@ -16,6 +16,10 @@ It is for beginners and experimenters building a QO-100 wideband DATV setup with
 - Stores the 10 most recent RTMP URLs or scanned QR codes.
 - Keeps QR scanning, but also lets the user reopen an older URL from the on-screen `History` button.
 
+## Planned Features
+
+Future versions are planned to add video text overlays for amateur DATV operation, including callsign identification and scrolling text that can be transmitted in the picture. Other QO-100 and DATV-focused features are also planned, based on feedback from operators who test the app on real stations.
+
 ## Important Radio Notes
 
 You must be licensed and permitted to transmit on the relevant amateur bands in your country. Test into a dummy load before connecting any amplifier or antenna.
