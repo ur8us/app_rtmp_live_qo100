@@ -53,7 +53,7 @@ str_rtmp_is_running3 = "rtmp live running . ."
 str_no_url_tips1 = "Get RTMP server address from live platform"
 str_no_url_tips2 = "Scan QRCode with server address"
 str_scan_tips1 = "1. Get RTMP server addr from live platform"
-str_scan_tips2 = " format like rtmp://xxx.com/app/stream"
+str_scan_tips2 = " format like rtmp://host:port/ or /app/stream"
 str_scan_tips3 = "2. Generate QRCode with server addr, scan"
 
 img_exit = image.load("./assets/exit.jpg").resize(50, 50)
@@ -116,6 +116,7 @@ def parse_url(url):
     port = 0
     application = ""
     stream = ""
+    url = str(url).strip()
     if not (url.startswith("rtmp://") or url.startswith("rtmps://")):
         print("parse url failed: {}".format(url))
         return (False, host, port, application, stream)
@@ -125,8 +126,8 @@ def parse_url(url):
         print("parse url failed: {}".format(url))
         return (False, host, port, application, stream)
 
-    res2 = res1[1].split("/", 2)
-    if len(res2) < 3:
+    res2 = res1[1].split("/", 1)
+    if len(res2) < 1 or len(res2[0]) == 0:
         print("parse url failed: {}".format(url))
         return (False, host, port, application, stream)
 
@@ -145,9 +146,19 @@ def parse_url(url):
         print("parse url failed: {}".format(url))
         return (False, host, port, application, stream)
 
-    application = res2[1]
-    stream = res2[2]
-    return (len(host) > 0 and len(application) > 0 and len(stream) > 0, host, port, application, stream)
+    if port <= 0 or port > 65535:
+        print("parse url failed: {}".format(url))
+        return (False, host, port, application, stream)
+
+    if len(res2) > 1:
+        path = res2[1]
+        if len(path) > 0:
+            res4 = path.split("/", 1)
+            application = res4[0]
+            if len(res4) > 1:
+                stream = res4[1]
+
+    return (len(host) > 0, host, port, application, stream)
 
 
 def load_state():

@@ -135,3 +135,11 @@ On 2026-05-11 a second live-camera matrix test was run with 15-second captures f
 ## Documentation Notes
 
 The public README intentionally avoids workstation-specific paths and camera credentials. Use placeholders such as `<camera-ip>`, `<pluto-ip>`, and `<callsign>` in public-facing examples.
+
+For QR codes, note that many online QR code generators have produced codes that do not scan reliably with the MaixCAM app. The QR generator at <https://www.barcodesinc.com/generator/qr/> has worked well for PlutoDVB RTMP URLs and is a good user-facing recommendation when users need to create URL barcodes for their Plutos.
+
+The repository also includes `scripts/make_qr.py`, a small local Python command-line QR generator. Example:
+
+```sh
+scripts/make_qr.py 'rtmp://192.168.2.1:7272/' -o plutodvb-rtmp-qr.png
+```

@@ -119,6 +119,22 @@ rtmp://192.168.2.1:7272/,2409.750,DVBS2,QPSK,333,23,-20/YOURCALL,,
 
 Do not transmit on the example frequency just because it is shown here. Choose a free channel, monitor the BATC wideband spectrum, and coordinate with other users.
 
+For a PlutoDVB receiver using the default USB network address, this QR code contains:
+
+```text
+rtmp://192.168.2.1:7272/
+```
+
+![QR code for the default PlutoDVB RTMP URL](docs/images/plutodvb-default-rtmp-qr.png)
+
+Many online QR code generators have produced codes that do not scan reliably with the MaixCAM app. This generator has worked well for PlutoDVB RTMP URLs: <https://www.barcodesinc.com/generator/qr/>.
+
+You can also generate a PNG QR code locally:
+
+```sh
+scripts/make_qr.py 'rtmp://192.168.2.1:7272/' -o plutodvb-rtmp-qr.png
+```
+
 ## Local Receive Test Before RF
 
 Before involving the Pluto or any RF hardware, test that the camera can stream to a normal RTMP listener.
